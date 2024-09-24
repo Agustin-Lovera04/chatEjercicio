@@ -1,0 +1,39 @@
+----------------PARA DEPLOY----------
+
+en package.json
+
+- configurarle un motor 
+
+  "engines": {
+    "node": "14.x"
+  },
+
+
+-  "scripts": {
+    "start":"node start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+
+  -Luego todo nroaml, configuarcion de handlebars, express, socket, utilizamo slibreria Sweet Alert
+
+
+  -Luego configuramos un broadcast, para cada veez que s conecta alguien dar avbiso, con el nombre que tomamos con el pop up de sweet Alert
+
+
+  _Luego manipulamos el DOM con JS para darle lugara los mensjaes y estilos
+
+
+
+  -Luego comenzamos la comunicacion.
+
+  Hacemos una comunicacion con pop para cada usuario que se una.
+
+
+  -Luego Guardamos todo en dos array, la info de cada usuario y toods los mensajes que se enviaron.
+
+  Cuando se conectas un usuaior nuevo ademas le mostramos todos los mensajes del histoprial.
+    Eso lo hacemos utilizando el array de mensajes donde estan todos guardados, que emitimos desde el lado del cliente.
+
+
+  -Y lueglo de plus enviamos un mensaje ante la desconexion ed un usuario
