@@ -1,18 +1,5 @@
 ----------------PARA DEPLOY----------
 
-en package.json
-
-- configurarle un motor 
-
-  "engines": {
-    "node": "14.x"
-  },
-
-
--  "scripts": {
-    "start":"node start",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
 
 
   -Luego todo nroaml, configuarcion de handlebars, express, socket, utilizamo slibreria Sweet Alert
@@ -37,3 +24,30 @@ en package.json
 
 
   -Y lueglo de plus enviamos un mensaje ante la desconexion ed un usuario
+
+
+
+
+-VER BIEN Y ENTENDER DETENIDAMENTE NO HICE BIEN EL TXT PERO ES SIMPLE DE ENTENDER.
+
+
+
+....................LUEGO PARA EL DEPLOY EN GLITH
+
+PRIMERO EN EL PACAKACGE JSON ESTOS CAMBIOS;
+en package.json
+
+- configurarle un motor 
+
+  "engines": {
+    "node": "14.x"
+  },
+
+
+-  "scripts": {
+    "start":"node ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+
+IMPORTAMOS EL REPOSITORIO EN NEW PROYECT
