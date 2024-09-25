@@ -51,3 +51,6 @@ en package.json
 
 
 IMPORTAMOS EL REPOSITORIO EN NEW PROYECT
+
+
+-Luego una vez cargado, nos vamos a "share" y ahi obtenemos el link

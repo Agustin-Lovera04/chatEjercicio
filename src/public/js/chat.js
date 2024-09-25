@@ -6,7 +6,7 @@ let divMensajes = document.getElementById('mensajes')
 Swal.fire({
     title:"Identifiquese",
     input:"text",
-    text:"Ingrese su nickname",
+    text:"Ingrese su nombre",
     inputValidator: (value)=>{
         return !value && "Debe ingresar un nombre...!!!"
     },
@@ -34,6 +34,16 @@ Swal.fire({
             e.target.value = ''
         }
     })
+
+    let buttonEnviar = document.getElementById('enviar')
+    buttonEnviar.addEventListener('click', () => {
+        if(inputMensaje.value.trim().length > 0){
+            socket.emit('mensaje' , {emisor: resultado.value, mensaje: inputMensaje.value.trim()})
+            inputMensaje.value = ''
+            inputMensaje.focus()
+        }
+    })
+    
 
     socket.on('newMensaje' , datos =>{
         let parrafo = document.createElement('p')
